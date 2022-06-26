@@ -60,6 +60,7 @@ RUN docker-php-ext-enable zip
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 RUN apt install -y nodejs
+RUN apt install -y npm
 RUN apt install -y grunt
 
 RUN a2enmod rewrite
